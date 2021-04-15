@@ -111,7 +111,7 @@ prev.addEventListener("click",prevSong);
 music.addEventListener('timeupdate',(event)=>{
 
      const {currentTime, duration}= event.srcElement;
-     console.log(currentTime);
+     
      let progress_time=(currentTime/duration)*100;
 
      progress.style.width=`${progress_time}%`;
